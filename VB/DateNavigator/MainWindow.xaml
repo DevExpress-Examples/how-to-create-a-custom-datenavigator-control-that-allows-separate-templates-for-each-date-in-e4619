@@ -1,0 +1,22 @@
+﻿<Window x:Class="dxExample.MainWindow" Title="MainWindow" Height="325" Width="355"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:dxExample">
+    <Window.Resources>
+        <local:TestSpecialDateTemplateSelector x:Key="testSpecialDateTemplateSelector"/>
+        <DataTemplate x:Key="testSpecialDateTemplate1">
+            <Border BorderBrush="Orange" BorderThickness="2" CornerRadius="2">
+                <TextBlock Text="{Binding Day}" Margin="2"/>
+            </Border>
+        </DataTemplate>
+        <DataTemplate x:Key="testSpecialDateTemplate2">
+            <Grid>
+                <Ellipse Fill="Azure" Width="22" Height="22"/>
+                <TextBlock Text="{Binding Day}" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Italic"/>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <local:TemplatedDateNavigator x:Name="dateNavigator" SpecialDateTemplateSelector="{DynamicResource testSpecialDateTemplateSelector}"/>
+    </Grid>
+</Window>
