@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/DateNavigator/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/DateNavigator/MainWindow.xaml))
+* **[TemplatedDateNavigator.xaml](./CS/DateNavigator/TemplatedDateNavigator.xaml) (VB: [TemplatedDateNavigator.xaml](./VB/DateNavigator/TemplatedDateNavigator.xaml))**
+* [TestSpecialDateTemplateSelector.cs](./CS/DateNavigator/TestSpecialDateTemplateSelector.cs) (VB: [TestSpecialDateTemplateSelector.vb](./VB/DateNavigator/TestSpecialDateTemplateSelector.vb))
+<!-- default file list end -->
 # How to create a custom DateNavigator control that allows separate templates for each date in a SpecialDates list
 
 
